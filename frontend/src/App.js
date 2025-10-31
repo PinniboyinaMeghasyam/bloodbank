@@ -21,7 +21,7 @@ function App() {
   // Fetch all donors
   const fetchDonors = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/donors');
+      const response = await fetch('https://bloodbank-backend-vl4m.onrender.com/api/donors');
       const data = await response.json();
       setDonors(data);
       updateDonorSelect(data);
