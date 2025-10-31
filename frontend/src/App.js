@@ -33,7 +33,7 @@ function App() {
   // Fetch inventory
   const fetchInventory = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/inventory');
+      const response = await fetch('https://bloodbank-backend-vl4m.onrender.com/api/inventory');
       const data = await response.json();
       setInventory(data);
     } catch (error) {
